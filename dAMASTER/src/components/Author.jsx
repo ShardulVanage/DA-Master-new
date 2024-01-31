@@ -57,7 +57,7 @@ export function Author() {
             </p>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
            Im not just a Certified Data Scientist and TensorFlow Certified Developer—Im a passionate educator with 12+ years of experience transforming raw data into valuable insights across diverse industries like telecom, cyber security, and e-commerce. 
-           I've trained over 10,000 students and hold an average trainer score of 9+, proving my dedication to delivering impactful learning experiences.
+           I have trained over 10,000 students and hold an average trainer score of 9+, proving my dedication to delivering impactful learning experiences.
             </p>
             <p className="mt-8 flex flex-col sm:flex-row ">
               <Link
