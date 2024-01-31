@@ -53,10 +53,10 @@ export function Author() {
             </SectionHeading>
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
               <span className="block text-blue-600">Satyajit Pattnaik –</span> Hey
-              there, I’m the Creator behind ‘Data Analytics Masters - 2024 Edition’.
+              there, Im the Creator behind Data Analytics Masters - 2024 Edition.
             </p>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-           I’m not just a Certified Data Scientist and TensorFlow Certified Developer—I’m a passionate educator with 12+ years of experience transforming raw data into valuable insights across diverse industries like telecom, cyber security, and e-commerce. 
+           Im not just a Certified Data Scientist and TensorFlow Certified Developer—Im a passionate educator with 12+ years of experience transforming raw data into valuable insights across diverse industries like telecom, cyber security, and e-commerce. 
            I've trained over 10,000 students and hold an average trainer score of 9+, proving my dedication to delivering impactful learning experiences.
             </p>
             <p className="mt-8 flex flex-col sm:flex-row ">

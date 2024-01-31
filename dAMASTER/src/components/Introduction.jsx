@@ -16,7 +16,7 @@ export function Introduction() {
         </p>
         
         <p className="mt-4">
-          Struggling to make sense of messy data? Feeling lost in the sea of tools? We'll guide you through the process step-by-step.
+          Struggling to make sense of messy data? Feeling lost in the sea of tools? We will guide you through the process step-by-step.
         </p>
        
         <ul role="list" className="mt-8 space-y-3">
@@ -40,7 +40,7 @@ export function Introduction() {
             href="#free-chapters"
             className="text-base font-medium text-blue-600 hover:text-blue-800"
           >
-            No strings attached! Get a taste of the course and see if it's right for you.{' '}
+            No strings attached! Get a taste of the course and see if its right for you.{' '}
             <span aria-hidden="true">&rarr;</span>
           </Link>
         </p>

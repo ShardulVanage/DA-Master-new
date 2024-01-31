@@ -55,7 +55,7 @@ export default function Home() {
         }}
       >
         <p>
-          “Enrolling in Zep Analytics' Big Data Engineering program was a smart decision. The course covered Hadoop, Spark, and other essential big data technologies. 
+          “Enrolling in Zep Analytics Big Data Engineering program was a smart decision. The course covered Hadoop, Spark, and other essential big data technologies. 
           The experienced instructors and hands-on projects prepared me for a successful career in big data engineering”
         </p>
       </Testimonial>

@@ -69,7 +69,7 @@ const [state, setState] = useState(initState);
             Ditch the doubts, get your questions answered.
             </h2>
             <p className="mt-4 text-lg tracking-tight text-blue-200">
-              Enter your email address and Crafting your dream career? We're your blueprint builders.
+              Enter your email address and Crafting your dream career? We are your blueprint builders.
             </p>
           </div>
 
@@ -170,7 +170,7 @@ const [state, setState] = useState(initState);
                 Submit
               </Button> 
               <a href='https://api.whatsapp.com/send/?phone=%2B917978652529&text&type=phone_number&app_absent=0' className='flex flex-col justify-center items-c'>
-                <Image src={whatsapp} height={50} />
+                <Image alt="whatsappicon"  src={whatsapp} height={50} />
               </a>
   
 </div>

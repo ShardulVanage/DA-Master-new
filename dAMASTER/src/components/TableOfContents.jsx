@@ -534,10 +534,10 @@ export function TableOfContents() {
          Course curriculum
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-         Here's a glimpse into your learning journey
+         Here is a glimpse into your learning journey
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          This intensive program isn't just about learning tools and techniques — it's about transforming you into a confident, job-ready data analyst.
+          This intensive program isnt just about learning tools and techniques — its about transforming you into a confident, job-ready data analyst.
         </p>
         <Expandable>
           {({ isExpanded }) => (
