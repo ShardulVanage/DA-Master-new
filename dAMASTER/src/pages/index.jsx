@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Everything Starts as a Square - Get lost in the world of icon design
+          Zep Analytics DA MAster 2024
         </title>
         <meta
           name="description"

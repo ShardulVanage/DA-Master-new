@@ -31,7 +31,7 @@ function Pbutton() {
        
         <p className= {clsx('ml-1 mt-1 text-4xl tracking-tight',)}>  <span className='text-[1.75rem] leading-tight'> ₹</span>4999</p>
         <p className='font-semibold text-xl pl-2'>Indian</p>
-        <p>This course isn't just an expense, it's an investment in your career and earning potential.</p>
+        <p>This course isnt just an expense, its an investment in your career and earning potential.</p>
         <Button
           href="https://pages.razorpay.com/ZepDAM"
           className="mt-4 "
@@ -43,7 +43,7 @@ function Pbutton() {
        
         <p className= {clsx('ml-1 mt-1 text-4xl tracking-tight',)}>  <span className='text-[1.75rem] leading-tight'> $</span>70</p>
         <p className='font-semibold text-xl pl-2'>Internation</p>
-        <p>Don't miss out on your chance to master data analytics and secure your future.</p>
+        <p>Dont miss out on your chance to master data analytics and secure your future.</p>
         <Button
           href="https://pages.razorpay.com/ZepDAMINT"
           className="mt-4 "

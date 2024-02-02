@@ -16,13 +16,13 @@ function Testimonial() {
     <div className='flex sm:flex-row flex-col'>
         <div>
         <div className="relative z-10 mx-auto flex w-80 rounded-xl   md:w-80 lg:w-auto">
-            <Image className="" width={500} height={500} src={coverImage} alt="" priority />
+            <Image className="" width={500} height={500} src={coverImage} alt="s" priority />
           </div>
       </div>
       
       <div className='flex flex-row w-full mb-4'>
         <div className='mr-2'>
-<Image src={logo} height={28} className='mt-0.5 pt-0.5 '/>
+<Image alt='logo' src={logo} height={28} className='mt-0.5 pt-0.5 '/>
         </div>
         <div>
           <div className=" mt-1 flex justify-center  lg:justify-start">
