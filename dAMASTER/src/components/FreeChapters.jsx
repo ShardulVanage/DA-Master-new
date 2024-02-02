@@ -5,6 +5,9 @@ import { Pattern } from '@/components/Pattern'
 import { useState } from "react";
 import Image from 'next/image';
 import whatsapp from '@/images/whatsapp.png'
+import instagram from '@/images/instagram.png'
+import linkedin from '@/images/linkedin.png'
+import youtube from '@/images/youtube.png'
 
 const initValues = { name: "", email: "", phnumber: "", message: "",Whatsapp_No:"" };
 
@@ -65,6 +68,17 @@ const [state, setState] = useState(initState);
         >
           <Pattern className="absolute -top-32 left-0 w-full sm:-top-5 sm:left-3/4 sm:ml-8 sm:w-auto md:left-2/3 lg:left-auto lg:right-2 lg:ml-0 xl:left-2/3 xl:right-auto" />
           <div>
+            <div className='flex flex-row justify-start items-center drop-shadow-2xl py-2 bg-slate-100/20 rounded-full px-4 w-2/4 '>
+              <a href='https://api.whatsapp.com/send/?phone=%2B917978652529&text&type=phone_number&app_absent=0' className='flex flex-col justify-center items-c'>
+                <Image alt="whatsappicon"  src={whatsapp} height={50} />
+              </a> <a href='https://www.linkedin.com/company/zep-analytics/' className='flex flex-col justify-center items-c'>
+                <Image alt="whatsappicon"  src={linkedin} height={50} />
+              </a> <a href='https://www.instagram.com/zep.analytics/' className='flex flex-col justify-center items-c'>
+                <Image alt="whatsappicon"  src={instagram} height={50} />
+              </a> <a href='https://www.youtube.com/@SatyajitPattnaik' className='flex flex-col justify-center items-c'>
+                <Image alt="whatsappicon"  src={youtube} height={50} />
+              </a>
+            </div>
             <h2 className="font-display text-5xl font-extrabold tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
             Ditch the doubts, get your questions answered.
             </h2>
@@ -163,16 +177,13 @@ const [state, setState] = useState(initState);
           <Button
                 type="submit"
                 color="white"
-                className=" w-3/6 sm:relative sm:z-10  sm:flex-none"
+                className=" w-full py-2  sm:relative sm:z-10  sm:flex-none"
                 
         
               >
                 Submit
               </Button> 
-              <a href='https://api.whatsapp.com/send/?phone=%2B917978652529&text&type=phone_number&app_absent=0' className='flex flex-col justify-center items-c'>
-                <Image alt="whatsappicon"  src={whatsapp} height={50} />
-              </a>
-  
+            
 </div>
           </form>
         </Container>

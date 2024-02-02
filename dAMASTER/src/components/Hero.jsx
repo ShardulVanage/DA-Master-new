@@ -1,34 +1,59 @@
 import Image from 'next/image'
+
 import logo from '@/images/logo.png'
-import { Button } from '@/components/Button'
-import { GridPattern } from '@/components/GridPattern'
+
 import { StarRating } from '@/components/StarRating'
 import coverImage from '@/images/heroimg.png'
+import { Screencasts } from './Screencasts'
+import Pbutton from './Pbutton'
+import SyllabusButtton from './SyllabusButtton'
+
+
 
 function Testimonial() {
   return (
-    <figure className="relative mx-auto max-w-md text-center lg:mx-0 lg:text-left">
-      <div className='flex flex-row'>
+    <figure className="relative mx-auto w-full  text-center lg:mx-0 lg:text-left  ">
+    <div className='flex sm:flex-row flex-col'>
+        <div>
+        <div className="relative z-10 mx-auto flex w-80 rounded-xl   md:w-80 lg:w-auto">
+            <Image className="" width={500} height={500} src={coverImage} alt="" priority />
+          </div>
+      </div>
+      
+      <div className='flex flex-row w-full mb-4'>
         <div className='mr-2'>
 <Image src={logo} height={28} className='mt-0.5 pt-0.5 '/>
         </div>
         <div>
-          <div className="flex justify-center text-blue-600 lg:justify-start">
+          <div className=" mt-1 flex justify-center  lg:justify-start">
         <StarRating />
       </div>
       <blockquote className="mt-2">
-        <p className="font-display text-xl font-medium text-slate-900">
-          “Information is the oil of the 21st century, and analytics is the combustion engine.”
-        </p>
+        <h1 className="font-display text-3xl font-extrabold text-slate-900">
+          Data Analytics Masters - 2024 Edition
+        </h1>
       </blockquote>
       <figcaption className="mt-2 text-sm text-slate-500">
-        <strong className="font-semibold text-blue-600 before:content-['—_']">
-         Peter Sondergaard
-        </strong>
-        , Senior Vice President and Global Head of Research at Gartner
+        
+       The premier Data Analytics Course in India offers a multitude of features designed to empower you and prepare you for diverse roles, ensuring you are job-ready
       </figcaption>
+   <div className='flex flex-row sm:justify-start justify-center py-3  '>
+    <div className='px-1'>
+       <Pbutton />
+    </div>
+    <div  className='px-1'>
+      <SyllabusButtton/>
+    </div>
+    
+   </div>
+   <a className='bg-white ml-1 pt py-2 px-7 mt-3 rounded-full text-sm font-semibold drop-shadow-sm' href="#free-chapters ">
+      Connect with us
+    </a>
         </div>
       </div>
+    </div>
+    
+      <Screencasts/>
     </figure>
   )
 }
@@ -36,8 +61,8 @@ function Testimonial() {
 export function Hero() {
   return (
     <header className="overflow-hidden bg-slate-100 lg:bg-transparent lg:px-5">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 grid-rows-[auto_1fr] gap-y-16 pt-16 md:pt-20 lg:grid-cols-12 lg:gap-y-20 lg:px-3 lg:pb-36 lg:pt-20 xl:py-32">
-        <div className="relative flex items-end lg:col-span-5 lg:row-span-2">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 grid-rows-[auto_1fr] gap-y-16 pt-16 md:pt-20 lg:grid-cols-10 lg:gap-y-20 lg:px-3">
+        {/* <div className="relative flex items-end lg:col-span-3 lg:row-span-2">
           <div className="absolute -bottom-12 -top-20 left-0 right-1/2 z-10 rounded-br-6xl bg-blue-600 text-white/10 md:bottom-8 lg:-inset-y-32 lg:left-[-100vw] lg:right-full lg:-mr-40">
             <GridPattern
               x="100%"
@@ -45,16 +70,15 @@ export function Hero() {
               patternTransform="translate(112 64)"
             />
           </div>
-          <div className="relative z-10 mx-auto flex w-80 rounded-xl   md:w-80 lg:w-auto">
-            <Image className="" width={1000} height={1000} src={coverImage} alt="" priority />
-          </div>
-        </div>
-        <div className="relative px-4 sm:px-6 lg:col-span-7 lg:pb-14 lg:pl-16 lg:pr-0 xl:pl-20">
+          
+        </div> */}
+        <div className="relative px-4 sm:px-6 lg:col-span-10 lg:pb-0 lg:pl-16 lg:pr-0 xl:pl-20">
           <div className="hidden lg:absolute lg:-top-32 lg:bottom-0 lg:left-[-100vw] lg:right-[-100vw] lg:block lg:bg-slate-100" />
           <Testimonial />
         </div>
-        <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pl-16 lg:pt-0 xl:pl-20">
-          <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
+        <div className="bg-white w-full col-span-full ">
+   
+          {/* <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
             <h1 className="font-display text-5xl font-extrabold text-slate-900 sm:text-6xl">
              Data Analytics Masters - 2024 Edition
             </h1>
@@ -69,7 +93,7 @@ export function Hero() {
                 Buy Now
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

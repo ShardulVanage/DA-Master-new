@@ -8,7 +8,7 @@ function StarIcon(props) {
 
 export function StarRating({ rating = 5 }) {
   return (
-    <div className="flex gap-1">
+    <div className="flex gap-1 font-semibold text-blue-500">
      <a href="https://zepanalytics.com/">Zep Analytics</a>
     </div>
   )

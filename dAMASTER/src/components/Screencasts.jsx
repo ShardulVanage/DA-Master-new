@@ -40,14 +40,15 @@ const videos = [
     image: duotoneImage,
     runtime: { minutes: 28, seconds: 44 },
   },
-    {
-    title: '24X7 chat support',
-    description:
-      'Get unlimited chat support from our experts',
-    image: cs,
-    runtime: { minutes: 28, seconds: 44 },
-  },{
-    title: 'Project Based Learning with Intense Knowledge',
+  //   {
+  //   title: '24X7 chat support',
+  //   description:
+  //     'Get unlimited chat support from our experts',
+  //   image: cs,
+  //   runtime: { minutes: 28, seconds: 44 },
+  // },
+  {
+    title: 'Project Based Learning ',
     description:
       'Learn the skills by developing different projects throughout the sessions.',
     image: pl,
@@ -76,7 +77,7 @@ export function Screencasts() {
     <section
       id="screencasts"
       aria-labelledby="screencasts-title"
-      className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
+      className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg: bg-white rounded-t-3xl"
     >
       <Container>
         <SectionHeading number="2" id="screencasts-title">
@@ -89,13 +90,13 @@ export function Screencasts() {
         Go beyond the basics and become a data-driven powerhouse with these unique benefits
         </p>
       </Container>
-      <Container size="lg" className="mt-16">
+      <Container size="lg" className="mt-16 ">
         <ol
           role="list"
-          className="grid grid-cols-1 gap-x-8 gap-y-10 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-3"
+          className="// grid grid-cols-1 gap-x-8 gap-y-10 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-5 " // grid grid-cols-1 gap-x-8 gap-y-10 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-3
         >
           {videos.map((video) => (
-            <li key={video.title} className="[counter-increment:video]">
+            <li key={video.title} className="[counter-increment:video] ">
               <div
                 className="relative flex h-44 items-center justify-center rounded-2xl px-6 shadow-lg"
                 style={{

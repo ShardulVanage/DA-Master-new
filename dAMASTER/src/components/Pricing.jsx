@@ -47,8 +47,8 @@ function Plan({ name, description, price, pricesymbol,features, href, featured }
           </span>
           <span
             className={clsx(
-              'ml-1 mt-1 text-7xl tracking-tight',
-              featured ? 'text-white' : 'text-slate-900'
+                'ml-1 mt-1 text-7xl tracking-tight',
+                featured ? 'text-white' : 'text-slate-900'
             )}
           >
             {price}

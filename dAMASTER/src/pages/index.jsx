@@ -28,11 +28,14 @@ export default function Home() {
         />
       </Head>
       <Hero />
-      <Introduction />
+     
+      {/* <Introduction /> */}
+       {/* <Screencasts /> */}
       <FreeChapters />
-      <NavBar />
-      <TableOfContents />
-      <Testimonial
+     
+      {/* <NavBar /> */}
+      {/* <TableOfContents /> */}
+      {/* <Testimonial
         id="testimonial-from-tommy-stroman"
         author={{
           name: 'Rahul Rajendran',
@@ -44,8 +47,8 @@ export default function Home() {
           “Comprehensive program on Data Analytics. Informative and well-structured sessions. Supportive instructors. 
           Valuable industry-level use cases and real-world projects. Thanks to Mr. Satyajit Pattnaik for exceptional AI, Data Science, and Analytics program.”
         </p>
-      </Testimonial>
-      <Screencasts />
+      </Testimonial> */}
+{/*      
       <Testimonial
         id="testimonial-from-gerardo-stark"
         author={{
@@ -63,7 +66,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <Author />
-      <Footer />
+      <Footer /> */}
     </>
   )
 }
