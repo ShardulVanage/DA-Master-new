@@ -8,12 +8,29 @@ import whatsapp from '@/images/whatsapp.png'
 import instagram from '@/images/instagram.png'
 import linkedin from '@/images/linkedin.png'
 import youtube from '@/images/youtube.png'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const initValues = { name: "", email: "", phnumber: "", message: "",Whatsapp_No:"" };
 
 const initState = { isLoading: false, error: "", values: initValues };
 
 export function FreeChapters() {
+ const form = useRef();
+
+  const sendEmail = (e) => {
+
+    e.preventDefault();
+
+    emailjs.sendForm('service_2iu0c69', 'template_54c57ul', form.current, 'C8dPWZXnl8qXkxHD8')
+      .then((result) => {
+
+          console.log(result.text);
+          e.target.reset();
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
 const [state, setState] = useState(initState);
   const [touched, setTouched] = useState({});
@@ -70,24 +87,24 @@ const [state, setState] = useState(initState);
           <div>
             <div className='flex flex-row justify-start items-center drop-shadow-2xl py-2 bg-slate-100/20 rounded-full px-4 w-2/4 '>
               <a href='https://api.whatsapp.com/send/?phone=%2B917978652529&text&type=phone_number&app_absent=0' className='flex flex-col justify-center items-c'>
-                <Image alt="whatsappicon"  src={whatsapp} height={50} />
+                <img alt="whatsappicon"  src={"https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986988/ee8gvpxhvyi2ktrxqiqi.png"} height={50} width={50} />
               </a> <a href='https://www.linkedin.com/company/zep-analytics/' className='flex flex-col justify-center items-c'>
-                <Image alt="whatsappicon"  src={linkedin} height={50} />
+                <img alt="whatsappicon"  src={"https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986989/by6dakpcnvg3bn5ckvx9.png"} height={50} width={50}/>
               </a> <a href='https://www.instagram.com/zep.analytics/' className='flex flex-col justify-center items-c'>
-                <Image alt="whatsappicon"  src={instagram} height={50} />
+                <img alt="whatsappicon"  src={"https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986986/fwbmcyknxvfibcmbwst3.png"} height={50} width={50}/>
               </a> <a href='https://www.youtube.com/@SatyajitPattnaik' className='flex flex-col justify-center items-c'>
-                <Image alt="whatsappicon"  src={youtube} height={50} />
+                <img alt="whatsappicon"  src={"https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986985/ao08nawgunhmhqferr97.png"} height={50} width={50}/>
               </a>
             </div>
             <h2 className="font-display text-5xl font-extrabold tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
             Ditch the doubts, get your questions answered.
             </h2>
             <p className="mt-4 text-lg tracking-tight text-blue-200">
-              Enter your email address and Crafting your dream career? We are your blueprint builders.
+             Enter your details, and we will get back to you with course details!!
             </p>
           </div>
 
-          <form className="lg:pl-16 sm:pt-12">
+          <form className="lg:pl-16 sm:pt-12"  ref={form} onSubmit={sendEmail}>
            
             <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
               <div className="relative sm:static sm:flex-auto">
@@ -95,6 +112,7 @@ const [state, setState] = useState(initState);
                  
                   type="text"
                   id="name"
+                  name='name'
                   required
                   aria-label="name"
                   placeholder="Name"
@@ -114,12 +132,28 @@ const [state, setState] = useState(initState);
             <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
               <div className="relative sm:static sm:flex-auto">
                 <input
-                 
+                 name='email'
                   type="email"
                   id="email"
                   required
                   aria-label="Email "
-                  placeholder="Email address"
+                  placeholder="Email"
+                  className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
+                />
+                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+              </div>
+           
+            </div>
+            
+            <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
+              <div className="relative sm:static sm:flex-auto">
+                <input
+                 name='pincode'
+                  type="pincode"
+                  id="pincode"
+                  required
+                  aria-label="pincode "
+                  placeholder="Pincode"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
                 <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
@@ -130,12 +164,12 @@ const [state, setState] = useState(initState);
             <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
               <div className="relative sm:static sm:flex-auto">
                 <input
-                 
-                  type="number"
+                 name='phnumber'
+                  type="phnumber"
                   id="phnumber"
                   required
                   aria-label="phnumber"
-                  placeholder="Ph.Number"
+                  placeholder="Phone"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
                 <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
@@ -146,12 +180,12 @@ const [state, setState] = useState(initState);
             <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
               <div className="relative sm:static sm:flex-auto">
                 <input
-                
+                name='whatsapp'
                   type="number"
                   id="Whatsapp"
                   required
                   aria-label="Whatsapp"
-                  placeholder="Whatsapp_No"
+                  placeholder="Whatsapp"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
                 <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
@@ -161,9 +195,9 @@ const [state, setState] = useState(initState);
             <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
               <div className="relative sm:static sm:flex-auto">
                 <textarea
-                
+                name='message'
                   type="text"
-                  id="message"
+                  id="npm"
                   required
                   aria-label="message"
                   placeholder="message"

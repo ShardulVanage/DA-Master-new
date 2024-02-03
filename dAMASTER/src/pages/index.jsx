@@ -14,10 +14,15 @@ import { Testimonial } from '@/components/Testimonial'
 import { Testimonials } from '@/components/Testimonials'
 import avatarImage1 from '@/images/avatars/avatar-1.png'
 import avatarImage2 from '@/images/avatars/avatar-2.png'
+import whatsapp from '@/images/whatsapp.png'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <>
+       <a href=' https://api.whatsapp.com/send/?phone=%2B917978652529&text&type=phone_number&app_absent=0' className='flex flex-col justify-items-end items-end z-10 fixed  bottom-1 right-1 drop-shadow-2xl  '>
+                <img alt="whatsappicon"  src={"https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986988/ee8gvpxhvyi2ktrxqiqi.png"} height={60} width={60} className='object-right-bottom' />
+              </a>
       <Head>
         <title>
           Zep Analytics DA MAster 2024
@@ -27,6 +32,7 @@ export default function Home() {
           content="A book and video course that teaches you how to design your own icons from scratch. "
         />
       </Head>
+   
       <Hero />
      
       {/* <Introduction /> */}

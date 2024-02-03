@@ -16,28 +16,28 @@ const videos = [
     title: 'Self Paced Program with 24X7 Support',
     description:
       'Learn the program at your own pace',
-    image: setupImage,
+    image: "https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986641/mvqnihoedrcvrpzixkiy.png",
     runtime: { minutes: 16, seconds: 54 },
   },
   {
     title: 'Course Completion Certificate ',
     description:
-      'Get yourself certified after completition of the course.',
-    image: gridsImage,
+      'Get yourself certified after completion of the course.',
+    image: "https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986641/jwz5drl4747cn6ckfmyk.png",
     runtime: { minutes: 9, seconds: 12 },
   },
   {
     title: 'Internship Certificate ',
     description:
       'Get a score of 80% in the assignments and you will be handed over an internship offer.',
-    image: strokesImage,
+    image: "https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986640/nxdawnces4hqktiyz2vb.png",
     runtime: { minutes: 23, seconds: 25 },
   },
   {
     title: 'Class Recordings',
     description:
       'Unlimited Hassle Free Access',
-    image: duotoneImage,
+    image: "https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986641/tjkji3aribsc62r7qnzi.png",
     runtime: { minutes: 28, seconds: 44 },
   },
   //   {
@@ -51,7 +51,7 @@ const videos = [
     title: 'Project Based Learning ',
     description:
       'Learn the skills by developing different projects throughout the sessions.',
-    image: pl,
+    image: "https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986640/hjcnia3geraxdzrynkgf.png",
     runtime: { minutes: 28, seconds: 44 },
   },
 ]
@@ -105,7 +105,7 @@ export function Screencasts() {
                 }}
               >
                 <div className="flex  overflow-hidden rounded">
-                  <Image src={video.image}height={250} alt="" unoptimized />
+                  <img src={video.image}height={250} alt="" unoptimized />
                 </div>
              
             </div>

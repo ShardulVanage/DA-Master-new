@@ -14,19 +14,19 @@ import { SectionHeading } from './SectionHeading'
 
 function SyllabusButtton() {
   return (
-    <div><Dialog>
- <DialogTrigger className='bg-white py-2 px-3 mt-3 rounded-full text-sm font-semibold drop-shadow-sm'>Syllbus</DialogTrigger>
-  <DialogContent className='bg-white '> 
+    <div ><Dialog className='  '>
+ <DialogTrigger className='bg-white py-2 px-3 mt-3 rounded-full text-sm font-semibold drop-shadow-sm'>Syllabus</DialogTrigger>
+  <DialogContent className='bg-white h-2/3 sm:h-auto overflow-x-scroll sm:overflow-visible'> 
     <DialogHeader>
       <DialogTitle>  <SectionHeading  id="pricing-title">
-          Syllabus
+          Syllabus 
         </SectionHeading></DialogTitle>
       <DialogDescription>
-        <h1 className='ml-4 font-display text-base font-extralight tracking-tight text-slate-900'>
+        <h1 className='ml-4  font-display text-base font-extralight tracking-tight text-slate-900'>
             Here is a glimpse into your learning journey
         </h1>
          <ol  role="list"
-       className=" divide-y divide-slate-300/30 rounded-2xl bg-slate-50 px-6 py-3 text-base tracking-tight sm:px-8 sm:py-7"
+       className="  divide-y divide-slate-300/30 rounded-2xl bg-slate-50 px-6 py-3 text-base tracking-tight sm:px-8 sm:py-7"
                       >
                     <li className="flex justify-between py-3">  Introduction to Data Analytics</li>
                      <li className="flex justify-between py-3">  Python for Data Analytics</li>

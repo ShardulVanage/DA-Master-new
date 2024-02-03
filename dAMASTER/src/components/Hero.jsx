@@ -16,19 +16,20 @@ function Testimonial() {
     <div className='flex sm:flex-row flex-col'>
         <div>
         <div className="relative z-10 mx-auto flex w-80 rounded-xl   md:w-80 lg:w-auto">
-            <Image className="" width={500} height={500} src={coverImage} alt="s" priority />
+            <img className="" width={500} height={500} src={"https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986290/bael39vem3hfwbak2gfs.png"} alt="s" priority />
           </div>
       </div>
       
       <div className='flex flex-row w-full mb-4'>
         <div className='mr-2'>
-<Image alt='logo' src={logo} height={28} className='mt-0.5 pt-0.5 '/>
+
         </div>
         <div>
           <div className=" mt-1 flex justify-center  lg:justify-start">
-        <StarRating />
+        
       </div>
       <blockquote className="mt-2">
+        <img alt='logo' src={"https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986565/hqatxpsjdg3zeql20jfe.png"} height={20} width={20} className='mt-0.5 pt-0.5 '/>
         <h1 className="font-display text-3xl font-extrabold text-slate-900">
           Data Analytics Masters - 2024 Edition
         </h1>
@@ -37,18 +38,20 @@ function Testimonial() {
         
        The premier Data Analytics Course in India offers a multitude of features designed to empower you and prepare you for diverse roles, ensuring you are job-ready
       </figcaption>
-   <div className='flex flex-row sm:justify-start justify-center py-3  '>
+   <div className='flex flex-col sm:flex-row justify-center sm:justify-start items-center sm:items-baseline py-3  '>
     <div className='px-1'>
        <Pbutton />
     </div>
     <div  className='px-1'>
       <SyllabusButtton/>
     </div>
-    
-   </div>
-   <a className='bg-white ml-1 pt py-2 px-7 mt-3 rounded-full text-sm font-semibold drop-shadow-sm' href="#free-chapters ">
+   
+        <a className='bg-white ml-1 pt py-2 px-7 mt-3 rounded-full text-sm font-semibold drop-shadow-sm' href="#free-chapters ">
       Connect with us
     </a>
+    
+   </div>
+ 
         </div>
       </div>
     </div>
