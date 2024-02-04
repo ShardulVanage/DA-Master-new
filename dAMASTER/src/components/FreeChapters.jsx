@@ -148,12 +148,12 @@ const [state, setState] = useState(initState);
             <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
               <div className="relative sm:static sm:flex-auto">
                 <input
-                 name='pincode'
-                  type="pincode"
-                  id="pincode"
-                  required
-                  aria-label="pincode "
-                  placeholder="Pincode"
+                 name='countrycode'
+                  type="text"
+                  id="countrycode"
+                  
+                  aria-label="countrycode "
+                  placeholder="Country code"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
                 <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
@@ -165,7 +165,7 @@ const [state, setState] = useState(initState);
               <div className="relative sm:static sm:flex-auto">
                 <input
                  name='phnumber'
-                  type="phnumber"
+                  type="text"
                   id="phnumber"
                   required
                   aria-label="phnumber"
@@ -181,7 +181,7 @@ const [state, setState] = useState(initState);
               <div className="relative sm:static sm:flex-auto">
                 <input
                 name='whatsapp'
-                  type="number"
+                  type="text"
                   id="Whatsapp"
                   required
                   aria-label="Whatsapp"
@@ -197,10 +197,10 @@ const [state, setState] = useState(initState);
                 <textarea
                 name='message'
                   type="text"
-                  id="npm"
+                  id="message"
                   required
                   aria-label="message"
-                  placeholder="message"
+                  placeholder="Message"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
                 <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />

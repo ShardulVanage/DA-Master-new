@@ -15,7 +15,9 @@ import { GridPattern } from '@/components/GridPattern'
 function Pbutton() {
   return (
     <Dialog>
-  <DialogTrigger className='bg-white py-2 px-3 mt-3 rounded-full text-sm font-semibold drop-shadow-sm'>Buy Now</DialogTrigger>
+  <DialogTrigger className='text-white  py-2 px-12 mt-3 rounded-full text-sm font-bold drop-shadow-xl bg-gradient-to-br from-purple-500 via-sky-500 to-blue-800'>Buy Now</DialogTrigger> 
+
+ 
   <DialogContent className='bg-white '> 
     <DialogHeader className='overflow=x=scr'>
       <DialogTitle>

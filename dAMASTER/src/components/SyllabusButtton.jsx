@@ -15,7 +15,7 @@ import { SectionHeading } from './SectionHeading'
 function SyllabusButtton() {
   return (
     <div ><Dialog className='  '>
- <DialogTrigger className='bg-white py-2 px-3 mt-3 rounded-full text-sm font-semibold drop-shadow-sm'>Syllabus</DialogTrigger>
+   <DialogTrigger className='text-white  py-2 px-12 mt-3 rounded-full text-sm font-bold drop-shadow-xl bg-gradient-to-br from-purple-500 via-sky-500 to-blue-800'>Syllabus </DialogTrigger> 
   <DialogContent className='bg-white h-2/3 sm:h-auto overflow-x-scroll sm:overflow-visible'> 
     <DialogHeader>
       <DialogTitle>  <SectionHeading  id="pricing-title">

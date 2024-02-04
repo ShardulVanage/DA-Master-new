@@ -29,7 +29,9 @@ function Testimonial() {
         
       </div>
       <blockquote className="mt-2">
+        <a href="https://zepanalytics.com/">
         <img alt='logo' src={"https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986565/hqatxpsjdg3zeql20jfe.png"} height={20} width={20} className='mt-0.5 pt-0.5 '/>
+        </a>
         <h1 className="font-display text-3xl font-extrabold text-slate-900">
           Data Analytics Masters - 2024 Edition
         </h1>
@@ -38,7 +40,7 @@ function Testimonial() {
         
        The premier Data Analytics Course in India offers a multitude of features designed to empower you and prepare you for diverse roles, ensuring you are job-ready
       </figcaption>
-   <div className='flex flex-col sm:flex-row justify-center sm:justify-start items-center sm:items-baseline py-3  '>
+   <div className='flex flex-col sm:flex-row justify-center sm:justify-start items-center sm:items-baseline py-3   '>
     <div className='px-1'>
        <Pbutton />
     </div>
@@ -46,8 +48,8 @@ function Testimonial() {
       <SyllabusButtton/>
     </div>
    
-        <a className='bg-white ml-1 pt py-2 px-7 mt-3 rounded-full text-sm font-semibold drop-shadow-sm' href="#free-chapters ">
-      Connect with us
+        <a className='text-white  py-2 px-12 mt-3 rounded-full text-sm font-bold drop-shadow-xl bg-gradient-to-br from-purple-500 via-sky-500 to-blue-800' href="#free-chapters ">
+      Connect   
     </a>
     
    </div>
