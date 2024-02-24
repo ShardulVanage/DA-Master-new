@@ -29,14 +29,14 @@ function Pbutton() {
        The right price for you, whoever you are
       </DialogDescription>
     <DialogDescription>
-       <div className='bg-slate-100 rounded-xl p-4 m-1'>
+       <div className='bg-slate-100 rounded-xl p-4 m-1 '>
        
         <p className= {clsx('ml-1 mt-1 text-4xl tracking-tight',)}>  <span className='text-[1.75rem] leading-tight'> ₹</span>4999</p>
         <p className='font-semibold text-xl pl-2'>Indian</p>
-        <p>This course isnt just an expense, its an investment in your career and earning potential.</p>
+        <p className='pl-2'>This course isnt just an expense, its an investment in your career and earning potential.</p>
         <Button
-          href="https://pages.razorpay.com/ZepDAM"
-          className="mt-4 "
+          href="https://rzp.io/l/s1ui3Kpw4g"
+          className="mt-4 ml-2"
         >
           Buy Now
         </Button>
@@ -44,11 +44,11 @@ function Pbutton() {
          <div className='bg-slate-100 rounded-xl p-4 m-1'>
        
         <p className= {clsx('ml-1 mt-1 text-4xl tracking-tight',)}>  <span className='text-[1.75rem] leading-tight'> $</span>70</p>
-        <p className='font-semibold text-xl pl-2'>Internation</p>
-        <p>Dont miss out on your chance to master data analytics and secure your future.</p>
+        <p className='font-semibold text-xl pl-2'>International</p>
+        <p className='pl-2'>Dont miss out on your chance to master data analytics and secure your future.</p>
         <Button
-          href="https://pages.razorpay.com/ZepDAMINT"
-          className="mt-4 "
+          href="https://rzp.io/l/ZepDAMINT"
+          className="mt-4 ml-2"
         >
           Buy Now
         </Button>

@@ -37,15 +37,15 @@ function Testimonial() {
         </h1>
       </blockquote>
       <figcaption className="mt-2 text-sm text-slate-500">
-        
-       The premier Data Analytics Course in India offers a multitude of features designed to empower you and prepare you for diverse roles, ensuring you are job-ready
+        The leading Data Analytics Course in India provides a wide range of features aimed at empowering individuals and preparing them for diverse roles, ensuring they are well-prepared for employment opportunities
       </figcaption>
    <div className='flex flex-col sm:flex-row justify-center sm:justify-start items-center sm:items-baseline py-3   '>
     <div className='px-1'>
        <Pbutton />
     </div>
-    <div  className='px-1'>
-      <SyllabusButtton/>
+    <div  className='px-1 mt-3'>
+      <a href='/syllabus.pdf' 
+      className="text-white  py-2 px-12 mt-3 rounded-full text-sm font-bold drop-shadow-xl bg-gradient-to-br from-purple-500 via-sky-500 to-blue-800">Syllabus</a>
     </div>
    
         <a className='text-white  py-2 px-12 mt-3 rounded-full text-sm font-bold drop-shadow-xl bg-gradient-to-br from-purple-500 via-sky-500 to-blue-800' href="#free-chapters ">

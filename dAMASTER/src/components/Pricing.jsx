@@ -116,7 +116,7 @@ export function Pricing() {
             description=" This course isn't just an expense, it's an investment in your career and earning potential."
            pricesymbol="₹"
             price={4999}
-            href="https://pages.razorpay.com/ZepDAM"
+            href="https://rzp.io/l/s1ui3Kpw4g"
             features={[
               "Self Paced",
               "Intense Syllabus",
@@ -132,7 +132,7 @@ export function Pricing() {
             description="Don't miss out on your chance to master data analytics and secure your future."
               pricesymbol="$"
             price={70}
-            href="https://pages.razorpay.com/ZepDAMINT"
+            href="https://rzp.io/l/ZepDAMINT"
             features={[
               "Self Paced",
               "Intense Syllabus",

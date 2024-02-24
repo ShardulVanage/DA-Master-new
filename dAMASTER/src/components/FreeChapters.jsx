@@ -1,15 +1,13 @@
 "use client"
-import { Button } from '@/components/Button'
+
 import { Container } from '@/components/Container'
 import { Pattern } from '@/components/Pattern'
 import { useState } from "react";
-import Image from 'next/image';
-import whatsapp from '@/images/whatsapp.png'
-import instagram from '@/images/instagram.png'
-import linkedin from '@/images/linkedin.png'
-import youtube from '@/images/youtube.png'
+
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import {  toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const initValues = { name: "", email: "", phnumber: "", message: "",Whatsapp_No:"" };
 
@@ -24,7 +22,7 @@ export function FreeChapters() {
 
     emailjs.sendForm('service_2iu0c69', 'template_54c57ul', form.current, 'C8dPWZXnl8qXkxHD8')
       .then((result) => {
-
+ toast.success("Message sent, Our team will contact you shortly")
           console.log(result.text);
           e.target.reset();
       }, (error) => {
@@ -104,9 +102,9 @@ const [state, setState] = useState(initState);
             </p>
           </div>
 
-          <form className="lg:pl-16 sm:pt-12"  ref={form} onSubmit={sendEmail}>
+          <form className="lg:px-16 sm:py-12  pr-2 pb-2 sm:mt-12  "  ref={form} onSubmit={sendEmail}>
            
-            <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
+            <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5 ">
               <div className="relative sm:static sm:flex-auto">
                 <input
                  
@@ -118,7 +116,7 @@ const [state, setState] = useState(initState);
                   placeholder="Name"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500/40 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
               </div>
               {/* <Button
                 type="submit"
@@ -140,12 +138,12 @@ const [state, setState] = useState(initState);
                   placeholder="Email"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+                <div className="absolute inset-0 rounded-md border rounded-r-none border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500/40 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
               </div>
            
             </div>
-            
-            <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
+             <div className="flex flex-row">
+            <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5 w-1/4">
               <div className="relative sm:static sm:flex-auto">
                 <input
                  name='countrycode'
@@ -153,15 +151,15 @@ const [state, setState] = useState(initState);
                   id="countrycode"
                   
                   aria-label="countrycode "
-                  placeholder="Country code"
+                  placeholder="+91"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500/40 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
               </div>
            
             </div>
 
-            <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
+            <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5 w-full">
               <div className="relative sm:static sm:flex-auto">
                 <input
                  name='phnumber'
@@ -172,10 +170,11 @@ const [state, setState] = useState(initState);
                   placeholder="Phone"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500/40 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
               </div>
            
             </div>
+            </div>    
 
             <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
               <div className="relative sm:static sm:flex-auto">
@@ -188,7 +187,7 @@ const [state, setState] = useState(initState);
                   placeholder="Whatsapp"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500/40 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
               </div>
            
             </div>
@@ -203,20 +202,20 @@ const [state, setState] = useState(initState);
                   placeholder="Message"
                   className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-slate-500/40 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
               </div>
            
             </div>
 <div className='flex flex-row justify-evenly items-center mt-6'>
-          <Button
+          <button 
                 type="submit"
                 color="white"
-                className=" w-full py-2  sm:relative sm:z-10  sm:flex-none"
+                className=" w-full text-center   py-4 bg-gradient-to-r from-gray-100/20 to-gray-300/30 px-24 rounded-2xl font-medium border-double border-8 text-slate-50 hover:text-slate-100   sm:relative sm:z-10  sm:flex-none"
                 
         
               >
                 Submit
-              </Button> 
+              </button> 
             
 </div>
           </form>
