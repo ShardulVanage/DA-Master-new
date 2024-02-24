@@ -34,7 +34,7 @@ export default function Home() {
           />
       </Head>
           
-   <ToastContainer position='bottom-center'/>
+   <ToastContainer position='top-center'/>
       <Hero />
      
       {/* <Introduction /> */}
