@@ -34,7 +34,7 @@ function Faq() {
             <div class="mb-7 flex flex-wrap">
               <div class="w-full">
                 {faq.map((faqs)=>(
-<div class="pb-5 border-b border-gray-300 py-3">
+<div key={faqs.q} class="pb-5 border-b border-gray-300 py-3">
                   <div class="flex flex-wrap -m-1.5">
                     <div class="flex-1 p-1.5">
                       <h3 class="mb-5 text-lg text-gray-950 font-bold font-heading leading-normal">{faqs.q}</h3>
