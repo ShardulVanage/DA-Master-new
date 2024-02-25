@@ -17,6 +17,7 @@ import avatarImage2 from '@/images/avatars/avatar-2.png'
 import whatsapp from '@/images/whatsapp.png'
 import Image from 'next/image'
 import { ToastContainer } from 'react-toastify';
+import Faq from '@/components/Faq'
 
 export default function Home() {
   return (
@@ -40,7 +41,8 @@ export default function Home() {
       {/* <Introduction /> */}
        {/* <Screencasts /> */}
       <FreeChapters />
-     
+      <Faq/>
+      <Footer />
       {/* <NavBar /> */}
       {/* <TableOfContents /> */}
       {/* <Testimonial
@@ -74,7 +76,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <Author />
-      <Footer /> */}
+      */}
     </>
   )
 }

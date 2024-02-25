@@ -25,11 +25,11 @@ function Pbutton() {
           Pricing
         </SectionHeading>
         </DialogTitle>
-      <DialogDescription>
+      <DialogDescription className="text-black">
        The right price for you, whoever you are
       </DialogDescription>
     <DialogDescription>
-       <div className='bg-slate-100 rounded-xl p-4 m-1 '>
+       <div className='bg-slate-100 text-black rounded-xl p-4 m-1 '>
        
         <p className= {clsx('ml-1 mt-1 text-4xl tracking-tight',)}>  <span className='text-[1.75rem] leading-tight'> ₹</span>4999</p>
         <p className='font-semibold text-xl pl-2'>Indian</p>
@@ -41,7 +41,7 @@ function Pbutton() {
           Buy Now
         </Button>
        </div>
-         <div className='bg-slate-100 rounded-xl p-4 m-1'>
+         <div className='bg-slate-100 text-black rounded-xl p-4 m-1'>
        
         <p className= {clsx('ml-1 mt-1 text-4xl tracking-tight',)}>  <span className='text-[1.75rem] leading-tight'> $</span>70</p>
         <p className='font-semibold text-xl pl-2'>International</p>
